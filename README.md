@@ -24,7 +24,7 @@ Inicialmente foi feita uma análise exploratório de dados que mostra a estrutur
 Modelos aplicados foram:
 
 1.	modelo de Rede Neural,
-2.	modelo Random Forest
+2.	modelo Random Forest.
 
 A análise de resultados concentrou-se nas seguintes métricas de avaliação:
 
