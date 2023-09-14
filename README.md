@@ -1,25 +1,22 @@
-## 
-## Previsão de Séries Temporais Aplicada a Vendas no Varejo: Um Estudo de Caso
+ 
+# Previsão de Séries Temporais Aplicada a Vendas no Varejo: Um Estudo de Caso
 
-#### - Aluna: [Natasa Marinkovic](https://github.com/natasariobgd).
+#### Aluna: [Natasa Marinkovic](https://github.com/natasariobgd).
+#### Orientadora: [Manoela Kohler](https://github.com/manoelakohler).
 
-#### - Orientadora: [Manoela Kohler](https://github.com/manoelakohler).
-
------------------------------------------------
-
-#### Trabalho apresentado ao curso [BI-MASTER](https://ica.puc-rio.ai/bi-master) como pré-requisito para conclusão de curso e obtenção de crédito na disciplina "Projetos de Sistemas Inteligentes de Apoio à Decisão".
-
-----------------------------------------------------------------------
+Trabalho apresentado ao curso [BI-MASTER](https://ica.puc-rio.ai/bi-master) como pré-requisito para conclusão de curso e obtenção de crédito na disciplina "Projetos de Sistemas Inteligentes de Apoio à Decisão".
 
 ### Resumo
 
 A análise e a previsão de séries temporais, cada vez mais, têm desempenhado um papel importante no processo de definição de estratégias empresariais.
 Este trabalho se propõe a explorar a aplicação das técnicas de previsão de séries temporais em um cenário específico: setor de varejo.
 No contexto do varejo, entender e tentar antecipar a procura de clientes abre a possibilidade para melhor otimização de estoques e alocação de recursos tanto financeiros quanto humanos.
+Nosso objetivo é aplicar alguns modelos de previsão de séries temporais e verificar os resultados que cada um vai atingir utilizando um conjunto de dados históricos de vendas de uma loja de brinquedos ao longo de um período de cinco anos.
 
-Nosso objetivo é aplicar alguns modelos de previsão de séries temporais e verificar os resultados que cada um vai atingir analisando um conjunto de dados históricos de vendas de uma loja de brinquedos ao longo de um período de cinco anos.
    
-Inicialmente foi feita uma análise exploratório de dados que mostra a estrutura, as estatísticas principais e possíveis sazonalidade e tendências.
+### 1. Introdução
+
+Inicialmente foi feita uma análise exploratório de dados que mostra a estrutura, as estatísticas principais e possíveis sazonalidades e tendências.
 
 Modelos aplicados foram:
 
