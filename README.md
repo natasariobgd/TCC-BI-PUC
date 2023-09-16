@@ -47,7 +47,7 @@ A identificação de sezonalidades semanais e anuais, de tendencias de creciment
 
 ### 2 Modelagem
 
-Nesse estudo forma aplicados os seguintes modelos:
+Nesse estudo foram aplicados os seguintes modelos:
 
 1.	modelo de Rede Neural,
 
