@@ -39,7 +39,7 @@ Para isso se tornar possível, é importante fazer uma análise exploratória de
 A base de dados utilizada nesse estudo de caso contem dados de venda, de estoque e de preços. 
 A primeirá dúvida foi se essas três informações tem ou não alguma correlação e utilizando a matriz de correlação foi detectada a ausência de correlação entre os dados definindo que o foco deve ser apenas na série de venda.
 
-Agora, com foco definido, iniciamos uma nova exploração de dados identificando de tendências, sezonalidades e ruidos dos dados.
+Agora, com foco definido, iniciamos uma nova exploração de dados identificando as tendências, sezonalidades e ruidos dos dados de apenas série de venda.
 
 ![image](https://github.com/natasariobgd/TCC-BI-PUC/assets/97364314/c57df118-6c3a-4862-b6e0-7d03bda46991)
 
