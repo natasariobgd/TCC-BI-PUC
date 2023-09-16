@@ -37,7 +37,7 @@ No contexto do varejo, entender e tentar antecipar a procura de clientes abre a 
 Para isso se tornar possível, é importante fazer uma análise exploratória de dados históricos que mostra a estrutura, as estatísticas principais e possíveis sazonalidades e tendências.
 
 A base de dados utilizada nesse estudo de caso contem dados de venda, de estoque e de preços. 
-A primeirá dúvida foi se essas três informações tem ou não alguma correlação e utilizando a matriz de correlação foi detectada a ausência de correlação entre os dados definindo que o foco deve ser apenas na série de venda.
+A primeirá dúvida foi se essas três informações tem ou não alguma correlação. Utilizando a matriz de correlação foi detectada a ausência de correlação entre os dados definindo que o foco deve ser apenas na série de venda.
 
 Agora, com foco definido, iniciamos uma nova exploração de dados identificando as tendências, sezonalidades e ruidos dos dados de apenas série de venda.
 
