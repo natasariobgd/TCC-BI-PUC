@@ -34,7 +34,16 @@ The emphasis of the study is on the Random Forest model, as it has shown better 
 ### 1. Introdução
 
 No contexto do varejo, entender e tentar antecipar a procura de clientes abre a possibilidade para melhor otimização de estoques e alocação de recursos tanto financeiros quanto humanos.
-Inicialmente foi feita uma análise exploratório de dados que mostra a estrutura, as estatísticas principais e possíveis sazonalidades e tendências.
+Para isso se tornar possível, é importante fazer uma análise exploratória de dados históricos que mostra a estrutura, as estatísticas principais e possíveis sazonalidades e tendências.
+
+A base de dados utilizada nesse estudo de caso contem dados de venda, de estoque e de preços. 
+A primeirá dúvida foi se essas três informações tem ou não alguma correlação. A matriz de correlação mostrou a ausência de correlação entre os dados definindo que o foco deve ser apenas a série de venda.
+
+Agora, com foco definido, iniciamos uma nova exploração de dados que tem como seu objetivo identificação de tendências, sezonalidades e ruidos dos dados.
+
+![image](https://github.com/natasariobgd/TCC-BI-PUC/assets/97364314/c57df118-6c3a-4862-b6e0-7d03bda46991)
+
+
 
 Modelos aplicados foram:
 
