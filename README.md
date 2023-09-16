@@ -10,12 +10,18 @@ Trabalho apresentado ao curso [BI-MASTER](https://ica.puc-rio.ai/bi-master) como
 
 A análise e a previsão de séries temporais, cada vez mais, têm desempenhado um papel importante no processo de definição de estratégias empresariais.
 Este trabalho se propõe a explorar a aplicação das técnicas de previsão de séries temporais em um cenário específico: setor de varejo.
-No contexto do varejo, entender e tentar antecipar a procura de clientes abre a possibilidade para melhor otimização de estoques e alocação de recursos tanto financeiros quanto humanos.
-Nosso objetivo é aplicar alguns modelos de previsão de séries temporais e verificar os resultados que cada um vai atingir utilizando um conjunto de dados históricos de vendas de uma loja de brinquedos ao longo de um período de cinco anos.
+
+Nosso objetivo é aplicar alguns modelos de previsão e verificar os resultados que cada um vai atingir utilizando um conjunto de dados históricos de vendas de uma loja de brinquedos ao longo de um período de cinco anos.
+
+A escolha e construção de modelos é feita após uma análise exploratória de dados. 
+Esse estudo apresenta os modelos de Rede Neural e de Random Forest. Aborda as bibliotecas utilizadas, os parâmteros aplicados nos treinamentos feitos e os resultados dos testes realizados.
+
+A enfase do estudo é o modelo Random Fortest, por ter apresentado melhores resultados.
 
    
 ### 1. Introdução
 
+No contexto do varejo, entender e tentar antecipar a procura de clientes abre a possibilidade para melhor otimização de estoques e alocação de recursos tanto financeiros quanto humanos.
 Inicialmente foi feita uma análise exploratório de dados que mostra a estrutura, as estatísticas principais e possíveis sazonalidades e tendências.
 
 Modelos aplicados foram:
