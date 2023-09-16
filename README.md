@@ -65,6 +65,29 @@ A análise de resultados concentrou-se nas seguintes métricas de avaliação:
 
 4. Coefficient of Determination (R² Score) - O R² Score é uma métrica que varia de 0 a 1 e quantifica a proporção da variância do valor real que é explicada pela variável do valor previsto em um modelo de regressão. Quanto mais próximo de 1, melhor o modelo se ajusta aos dados, indicando que ele explica uma maior parte da variabilidade nos dados reais..
 
+Rede Neural
+
+Na construção de modelo foi utiliza a biblioteca Keras para construir e treinar redes neurais, com o auxílio da biblioteca TensorFlow. Além disso, a biblioteca MinMaxScaler do scikit-learn aplicou a normalização de dados que ajuda a evitar problemas de convergência e facilita o treinamento com diferentes faixas de valores. O processo de construção de modelo inclui a separação dos dados em conjuntos de treinamento e teste (usando 80% dos dados para treinamento), seguido pela normaliação dos dados de vendas para o intervalo [-1, 1] com o objetivo de padronizá-los. O resultado final são conjuntos de dados de treinamento e teste normalizados e prontos para serem usados em um modelo de rede neural.
+
+from keras.callbacks import History #biblioteca para construir e treinar redes neurais mostrando o histórico do progresso.
+import tensorflow as tf #biblioteca para desenvolvimento de redes neurais
+from sklearn.preprocessing import MinMaxScaler #biblioteca para normalização de dados dentro de uma intervalo, geralmente entre 0 e 1.
+
+
+            ---- Vamos eeparar os dados em treinamento e teste
+            train_size = int(len(df) * 0.8)
+            train_data = df[:train_size]
+            test_data = df[train_size:]
+
+            ---- Escalonar os dados para o intervalo [-1, 1]
+            scaler = MinMaxScaler()
+            train_scaled = scaler.fit_transform(train_data['Sales'].values.reshape(-1, 1))
+            test_scaled = scaler.transform(test_data['Sales'].values.reshape(-1, 1))
+
+
+
+
+### Resultados
 
 Os resultados revelam que o modelo Random Forest teve uma capacidade boa de se ajustar aos dados e que conseguiu capturar aproximadamente 80% da variabilidade dos dados.
 É importante ressaltar que apenas após a inclusão do parâmetro "min_samples_leaf" foi possível eliminar overfitting do modelo.
