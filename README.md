@@ -9,7 +9,7 @@ Trabalho apresentado ao curso [BI-MASTER](https://ica.puc-rio.ai/bi-master) como
 ### Resumo
 
 A análise e a previsão de séries temporais, cada vez mais, têm desempenhado um papel importante no processo de definição de estratégias empresariais.
-Este trabalho se propõe a explorar a aplicação das técnicas/modelos de previsão de séries temporais em um cenário específico: setor de varejo.
+Este trabalho se propõe a explorar a aplicação das técnicas de previsão de séries temporais em um cenário específico: setor de varejo.
 
 Nosso objetivo é aplicar alguns modelos de previsão e verificar os resultados que cada um vai atingir utilizando um conjunto de dados históricos de vendas de uma loja de brinquedos ao longo de um período de cinco anos.
 
@@ -22,7 +22,7 @@ A enfase do estudo é o modelo Random Fortest, por ter apresentado melhores resu
 
 The analysis and forecasting of time series data have increasingly played an important role in the process of defining business strategies.
 
-This work aims to explore the application of time series forecasting techniques/models in a specific scenario: the retail sector.
+This work aims to explore the application of time series forecasting techniques in a specific scenario: the retail sector.
 
 Our objective is to apply some forecasting models and assess the results that each one will achieve using a historical dataset of toy store sales over a five-year period.
 
