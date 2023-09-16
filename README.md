@@ -136,6 +136,8 @@ Para esse modelo foi utilizada a biblioteca scikit-learn para dividir os dados e
 
 ### 3. Resultados
 
+O modelo baseado em Rede Neural mostrou-se complexo para o problema e sem capacidade significativa de adaptação. Os resultados obtidos (Mean Absolute Error (MAE): 1916.4457001911212; Mean Squared Error (MSE): 9599514.750538334; R^2 Score: 0.30934478062640824) mostram que o modelo explica apenas cerca de 31% da variação nos dados. Em outras palavras, o modelo não está muito bem ajustado aos dados, pois a maioria da variação nos valores reais não é capturada pelas previsões do modelo. Por esse motivo foi abandonado no estudo.
+
 Os resultados revelam que o modelo Random Forest teve uma capacidade boa de se ajustar aos dados e que conseguiu capturar aproximadamente 80% da variabilidade dos dados.
 É importante ressaltar que apenas após a inclusão do parâmetro "min_samples_leaf" foi possível eliminar overfitting do modelo.
 
@@ -167,19 +169,20 @@ Os resultados obtidos com parâmetros usados são os seguintes:
 
 
 ### 4. Conclusões
-
-Diferente do modelo Random Forest, o modelo baseado em Rede Neural mostrou-se complexo para o problema e sem capacidade significativa de adaptação.
-Foi usada a biblioteca Keras e aplicado o modelo composto de uma primeira camada da rede LSTM (Long Short-Term Memory) com 64 unidades (neurônios), a segunda camada totalmente conectada (dense) com 32 unidades e uma camada se saída.
-
-Exp: model = tf.keras.models.Sequential([ tf.keras.layers.LSTM(64, activation='relu', input_shape=(X_train.shape[1], 1)), tf.keras.layers.Dense(32, activation='relu'), tf.keras.layers.Dense(1) ])
+ 
+Em resumo, ao longo deste estudo, exploramos a aplicação dos modelos Random Forest e Rede Neural. 
+Os resultados obtidos demonstram claramente a eficácia do algoritmo Random Forest que tem a capacidade de combinar múltiplas árvores de decisão para produzir previsões precisas. 
+Trata-se de um modelo facilmente configurável e pode ser aplicado tanto para os problemas de classificação quanto de regressão, que foi o nosso caso. 
 
 Este estudo contribuiu para uma compreensão melhor como funcionam os modelos de regressão e como a escolha dos hiper parâmetros desempenhou um papel importante na modelagem.
+Como futuro trabalho, sugiro explorar o uso de hiperparâmetros melhorando ainda mais o aprendizado de máquina.
 
-----------------------------------
+
+---
 
 Matrícula: 212.100.499
 
 Pontifícia Universidade Católica do Rio de Janeiro
 
-Curso de Pós Graduação Business Intelligence Master
+Curso de Pós Graduação *Business Intelligence Master*
 
