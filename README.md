@@ -13,7 +13,7 @@ Este trabalho se propõe a explorar a aplicação das técnicas de previsão de 
 
 Nosso objetivo é aplicar alguns modelos de previsão e verificar os resultados que cada um vai atingir utilizando um conjunto de dados históricos de vendas de uma loja de brinquedos ao longo de um período de cinco anos.
 
-A escolha e construção de modelos é feita após uma análise exploratória de dados. 
+A escolha e a construção de modelos é feita após uma análise exploratória de dados. 
 Esse estudo apresenta os modelos de Rede Neural e de Random Forest. Aborda as bibliotecas utilizadas, os parâmetros aplicados nos treinamentos feitos e os resultados dos testes realizados.
 
 A enfase do estudo é o modelo Random Fortest, por ter apresentado melhores resultados.
