@@ -166,6 +166,7 @@ Os resultados obtidos com parâmetros usados são os seguintes:
 ![image](https://github.com/natasariobgd/TCC-BI-PUC/assets/97364314/cae367f7-b741-4e72-a7f9-b19cc35c8367)
 
 
+### 4. Conclusões
 
 Diferente do modelo Random Forest, o modelo baseado em Rede Neural mostrou-se complexo para o problema e sem capacidade significativa de adaptação.
 Foi usada a biblioteca Keras e aplicado o modelo composto de uma primeira camada da rede LSTM (Long Short-Term Memory) com 64 unidades (neurônios), a segunda camada totalmente conectada (dense) com 32 unidades e uma camada se saída.
