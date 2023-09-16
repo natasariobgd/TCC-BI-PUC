@@ -45,7 +45,7 @@ Agora, com foco definido, iniciamos uma nova exploração de dados identificando
 
 A identificação de sezonalidades semanais e anuais, de tendencias de crecimento durante o peridodo analisado e existencia de ruidos foi importante no processo de definição de parâmentros de modelos aplicados. 
 
-### 2 Modelagem
+### 2. Modelagem
 
 Nesse estudo foram aplicados os seguintes modelos:
 
@@ -87,7 +87,7 @@ from sklearn.preprocessing import MinMaxScaler #biblioteca para normalização d
 
 
 
-### Resultados
+### 3. Resultados
 
 Os resultados revelam que o modelo Random Forest teve uma capacidade boa de se ajustar aos dados e que conseguiu capturar aproximadamente 80% da variabilidade dos dados.
 É importante ressaltar que apenas após a inclusão do parâmetro "min_samples_leaf" foi possível eliminar overfitting do modelo.
