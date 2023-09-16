@@ -140,10 +140,32 @@ Os resultados revelam que o modelo Random Forest teve uma capacidade boa de se a
 É importante ressaltar que apenas após a inclusão do parâmetro "min_samples_leaf" foi possível eliminar overfitting do modelo.
 
 Seguem os parâmetros usados no treinamento desse modelo que geraram melhores resultados:
-
 1. window_size - 21,
 2. n_estimators - 9 (indica o número de árvores usadas no treino e treinadas separadamente),
 3. min_samples_leaf - 10 (indica o número mínimo de amostras em último nó da árvore).
+
+Os resultados obtidos com parâmetros usados são os seguintes:
+
+                  ---- Resultados de Treino
+                  RMSE:  1412.730234027476
+                  MSE:  1995806.714135327
+                  MAPE:  21.337064011513917 %
+                  R2:  0.7970351728972613
+
+![image](https://github.com/natasariobgd/TCC-BI-PUC/assets/97364314/2a91fafb-2f28-4bfc-964a-e12ee22dfdf2)
+
+
+
+                  
+                  ---- Resultados de Teste
+                  RMSE:  1314.4153478503997
+                  MSE:  1727687.7066646875
+                  MAPE:  21.68674673658258 %
+                  R2:  0.7788494585142555
+
+![image](https://github.com/natasariobgd/TCC-BI-PUC/assets/97364314/cae367f7-b741-4e72-a7f9-b19cc35c8367)
+
+
 
 Diferente do modelo Random Forest, o modelo baseado em Rede Neural mostrou-se complexo para o problema e sem capacidade significativa de adaptação.
 Foi usada a biblioteca Keras e aplicado o modelo composto de uma primeira camada da rede LSTM (Long Short-Term Memory) com 64 unidades (neurônios), a segunda camada totalmente conectada (dense) com 32 unidades e uma camada se saída.
