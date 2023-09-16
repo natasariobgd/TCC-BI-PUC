@@ -14,11 +14,23 @@ Este trabalho se propõe a explorar a aplicação das técnicas de previsão de 
 Nosso objetivo é aplicar alguns modelos de previsão e verificar os resultados que cada um vai atingir utilizando um conjunto de dados históricos de vendas de uma loja de brinquedos ao longo de um período de cinco anos.
 
 A escolha e construção de modelos é feita após uma análise exploratória de dados. 
-Esse estudo apresenta os modelos de Rede Neural e de Random Forest. Aborda as bibliotecas utilizadas, os parâmteros aplicados nos treinamentos feitos e os resultados dos testes realizados.
+Esse estudo apresenta os modelos de Rede Neural e de Random Forest. Aborda as bibliotecas utilizadas, os parâmetros aplicados nos treinamentos feitos e os resultados dos testes realizados.
 
 A enfase do estudo é o modelo Random Fortest, por ter apresentado melhores resultados.
 
-   
+### Abstract
+
+The analysis and forecasting of time series data have increasingly played an important role in the process of defining business strategies.
+
+This work aims to explore the application of time series forecasting techniques in a specific scenario: the retail sector.
+
+Our objective is to apply some forecasting models and assess the results that each one will achieve using a historical dataset of toy store sales over a five-year period.
+
+The choice and construction of models are made after an exploratory data analysis. This study presents the Neural Network and Random Forest models, discusses the libraries used, the parameters applied in the training, and the results of the tests conducted.
+
+The emphasis of the study is on the Random Forest model, as it has shown better results.
+
+
 ### 1. Introdução
 
 No contexto do varejo, entender e tentar antecipar a procura de clientes abre a possibilidade para melhor otimização de estoques e alocação de recursos tanto financeiros quanto humanos.
