@@ -69,12 +69,7 @@ Rede Neural
 
 Na construção de modelo foi utiliza a biblioteca Keras para construir e treinar redes neurais, com o auxílio da biblioteca TensorFlow. Além disso, a biblioteca MinMaxScaler do scikit-learn aplicou a normalização de dados que ajuda a evitar problemas de convergência e facilita o treinamento com diferentes faixas de valores. O processo de construção de modelo inclui a separação dos dados em conjuntos de treinamento e teste (usando 80% dos dados para treinamento), seguido pela normaliação dos dados de vendas para o intervalo [-1, 1] com o objetivo de padronizá-los. O resultado final são conjuntos de dados de treinamento e teste normalizados e prontos para serem usados em um modelo de rede neural.
 
-from keras.callbacks import History #biblioteca para construir e treinar redes neurais mostrando o histórico do progresso.
-import tensorflow as tf #biblioteca para desenvolvimento de redes neurais
-from sklearn.preprocessing import MinMaxScaler #biblioteca para normalização de dados dentro de uma intervalo, geralmente entre 0 e 1.
-
-
-            ---- Vamos eeparar os dados em treinamento e teste
+            ---- Vamos separar os dados em treinamento e teste
             train_size = int(len(df) * 0.8)
             train_data = df[:train_size]
             test_data = df[train_size:]
@@ -84,8 +79,47 @@ from sklearn.preprocessing import MinMaxScaler #biblioteca para normalização d
             train_scaled = scaler.fit_transform(train_data['Sales'].values.reshape(-1, 1))
             test_scaled = scaler.transform(test_data['Sales'].values.reshape(-1, 1))
 
+Na próxima etapa foram definidos os parâmetros da rede neural:
+
+1. Window_size - tamanho de sequiência de dados originais
+   
+2. modelo de rede - modelo pode conter uma ou mais camadas o que define a complexidade de modelo
+
+3. Epochs - número de vezes que um algoritmo de aprendizado percorre o conjunto completo de dados de treinamento durante o processo de treinamento de um modelo de machine learning
+
+4. Batch_size - representa a quantidade de dados usados em cada iteração do algoritmo
 
 
+            ---- Vamos preparar os dados para treinamento
+            window_size = 100
+            X_train = []
+            y_train = []
+            for i in range(window_size, len(train_scaled)):
+                X_train.append(train_scaled[i-window_size:i, 0])
+                y_train.append(train_scaled[i, 0])
+            X_train, y_train = np.array(X_train), np.array(y_train)
+
+
+            ---- Vamos construir o modelo de rede neural simples
+            model = tf.keras.models.Sequential([
+                tf.keras.layers.LSTM(64, activation='relu', input_shape=(X_train.shape[1], 1)),
+                tf.keras.layers.Dense(32, activation='relu'),
+                tf.keras.layers.Dense(1)
+
+
+             ---- Vamos compilar o modelo
+             model.compile(optimizer='adam', loss='mean_squared_error')
+             
+             
+             ---- Vamos treinar o modelo sem callbacks
+             history = model.fit(X_train, y_train, epochs=500, batch_size=14, validation_split=0.1)
+
+
+   Random Forest
+
+
+
+   
 
 ### 3. Resultados
 
