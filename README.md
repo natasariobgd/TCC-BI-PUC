@@ -1,8 +1,8 @@
  
 # Previsão de Séries Temporais Aplicada a Vendas no Varejo: Um Estudo de Caso
 
-#### Aluna: [Natasa Marinkovic](https://github.com/natasariobgd).
-#### Orientadora: [Manoela Kohler](https://github.com/manoelakohler).
+#### Aluna: [Natasa Marinkovic](https://github.com/natasariobgd)
+#### Orientadora: [Manoela Kohler](https://github.com/manoelakohler)
 
 Trabalho apresentado ao curso [BI-MASTER](https://ica.puc-rio.ai/bi-master) como pré-requisito para conclusão de curso e obtenção de crédito na disciplina "Projetos de Sistemas Inteligentes de Apoio à Decisão".
 
