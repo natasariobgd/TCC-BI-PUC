@@ -49,9 +49,9 @@ A identificação de sezonalidades semanais e anuais, de tendencias de creciment
 
 Nesse estudo foram aplicados os seguintes modelos:
 
-1.	modelo de Rede Neural,
+1.	Rede Neural,
 
-2.	modelo Random Forest.
+2.	Random Forest.
 
 
 A análise de resultados concentrou-se nas seguintes métricas de avaliação:
@@ -81,13 +81,11 @@ Na construção de modelo foi utiliza a biblioteca Keras para construir e treina
 
 Em seguida, foram definidos os parâmetros da rede neural:
 
-1. Window_size - tamanho de sequiência de dados originais
-   
-2. modelo de rede - modelo pode conter uma ou mais camadas o que define a complexidade de modelo
-
-3. Epochs - número de vezes que um algoritmo de aprendizado percorre o conjunto completo de dados de treinamento durante o processo de treinamento de um modelo de machine learning
-
-4. Batch_size - representa a quantidade de dados usados em cada iteração do algoritmo
+1. Window_size - tamanho de sequiência de dados originais,   
+2. Modelo de rede - modelo pode conter uma ou mais camadas o que define a complexidade de modelo,
+3. Epochs - número de vezes que um algoritmo de aprendizado percorre o conjunto completo de dados de treinamento durante o processo de treinamento de um modelo de machine learning,
+4. Batch_size - representa a quantidade de dados usados em cada iteração do algoritmo,
+5. Otimize='adam' - O 'adam' é um otimizador que ajusta automaticamente a taxa de aprendizado durante o treinamento para acelerar a convergência.
 
 
             ---- Vamos preparar os dados para treinamento
