@@ -43,21 +43,28 @@ Agora, com foco definido, iniciamos uma nova exploração de dados identificando
 
 ![image](https://github.com/natasariobgd/TCC-BI-PUC/assets/97364314/c57df118-6c3a-4862-b6e0-7d03bda46991)
 
-A identificação de sezonalidades semanais e anuais, de tendencias de crecimento durante o peridodo analisado e existencia de ruidos foi importante no processo de definição de paramentros de modelos aplicados. 
+A identificação de sezonalidades semanais e anuais, de tendencias de crecimento durante o peridodo analisado e existencia de ruidos foi importante no processo de definição de parâmentros de modelos aplicados. 
 
 ### 2 Modelagem
 
-Modelos aplicados foram:
+Nesse estudo forma aplicados os seguintes modelos:
 
 1.	modelo de Rede Neural,
+
 2.	modelo Random Forest.
+
 
 A análise de resultados concentrou-se nas seguintes métricas de avaliação:
 
-1. Mean Absolute Error (MAE),
-2. Mean Squared Error (MSE),
-3. Mean Absolute Percentage Error (MAPE), e
-4. Coefficient of Determination (R² Score).
+
+1. Mean Absolute Error (MAE) - O MAE é uma métrica que calcula a média das diferenças absolutas entre os valores reais e os valores previstos.
+
+2. Mean Squared Error (MSE) - O MSE é uma métrica que calcula a média dos quadrados das diferenças entre os valores reais e os valores previstos. 
+
+3. Mean Absolute Percentage Error (MAPE) - O MAPE é uma métrica que calcula a média das porcentagens das diferenças absolutas entre os valores reais e os valores previstos em relação aos valores reais. É uma métrica útil para avaliar a precisão das previsões em termos de porcentagem de erro em relação aos valores reais.
+
+4. Coefficient of Determination (R² Score) - O R² Score é uma métrica que varia de 0 a 1 e quantifica a proporção da variância do valor real que é explicada pela variável do valor previsto em um modelo de regressão. Quanto mais próximo de 1, melhor o modelo se ajusta aos dados, indicando que ele explica uma maior parte da variabilidade nos dados reais..
+
 
 Os resultados revelam que o modelo Random Forest teve uma capacidade boa de se ajustar aos dados e que conseguiu capturar aproximadamente 80% da variabilidade dos dados.
 É importante ressaltar que apenas após a inclusão do parâmetro "min_samples_leaf" foi possível eliminar overfitting do modelo.
