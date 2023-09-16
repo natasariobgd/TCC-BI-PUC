@@ -67,7 +67,7 @@ A análise de resultados concentrou-se nas seguintes métricas de avaliação:
 
 Rede Neural
 
-Na construção de modelo foi utiliza a biblioteca Keras para construir e treinar redes neurais, com o auxílio da biblioteca TensorFlow. Além disso, a biblioteca MinMaxScaler do scikit-learn aplicou a normalização de dados que ajuda a evitar problemas de convergência e facilita o treinamento com diferentes faixas de valores. O processo de construção de modelo inclui a separação dos dados em conjuntos de treinamento e teste (usando 80% dos dados para treinamento), seguido pela normaliação dos dados de vendas para o intervalo [-1, 1] com o objetivo de padronizá-los. O resultado final são conjuntos de dados de treinamento e teste normalizados e prontos para serem usados em um modelo de rede neural.
+Na construção de modelo foi utiliza a biblioteca Keras para construir e treinar redes neurais com o auxílio da biblioteca TensorFlow. Além disso, a biblioteca MinMaxScaler do scikit-learn aplicou a normalização de dados que ajudou a evitar problemas de convergência e facilitou o treinamento com diferentes faixas de valores. O processo de construção de modelo incluiu a separação dos dados em conjuntos de treinamento e teste (usando 80% dos dados para treinamento), seguido pela normaliação dos dados de vendas para o intervalo [-1, 1] com o objetivo de padronizá-los. O resultado final foi criação de  conjuntos de dados de treinamento e teste normalizados e prontos para serem usados em modelo de rede neural.
 
             ---- Vamos separar os dados em treinamento e teste
             train_size = int(len(df) * 0.8)
@@ -79,7 +79,7 @@ Na construção de modelo foi utiliza a biblioteca Keras para construir e treina
             train_scaled = scaler.fit_transform(train_data['Sales'].values.reshape(-1, 1))
             test_scaled = scaler.transform(test_data['Sales'].values.reshape(-1, 1))
 
-Na próxima etapa foram definidos os parâmetros da rede neural:
+Em seguida, foram definidos os parâmetros da rede neural:
 
 1. Window_size - tamanho de sequiência de dados originais
    
@@ -115,11 +115,26 @@ Na próxima etapa foram definidos os parâmetros da rede neural:
              history = model.fit(X_train, y_train, epochs=500, batch_size=14, validation_split=0.1)
 
 
-   Random Forest
+Random Forest
+
+O modelo Random Forest é um algoritmo de aprendizado de máquina baseado em combinações de várias árvores de decisão para melhorar a precisão e reduzir o overfitting. Esse método utiliza amostragem aleatória para criar subconjuntos de dados de treinamento tornando cada árvore diferente. A combinação de árvores ajuda a reduzir o overfitting, tornando o modelo mais generalizável.
+
+Para esse modelo foi utilizada a biblioteca scikit-learn para dividir os dados em conjuntos de treinamento e teste, onde o parâmetro test_size determina a proporção dos dados reservados para teste (10% neste caso). Após a separação de dados foi criado o modelo de regressão baseado em Random Forest. Este modelo é configurado com 9 árvores de decisão e um número mínimo de dados (folhas) igual a 10. O parâmetro random_state é fixado em 0 para garantir reprodutibilidade. Posteriormente, o modelo foi treinado usando os dados de treinamento (x_train e y_train) e o resultado foi um modelo de regressão Random Forest pronto para fazer previsões com base nos dados de teste.
 
 
+               ---- O conjunto de teste será definido pelo parâmetro test_size que costuma variar de acordo com a natureza de dados.
+               from sklearn.model_selection import train_test_split
+               x_train, x_test, y_train, y_test = train_test_split(X,
+                                                                   y,
+                                                                   test_size=0.1)                                                                              
 
-   
+                ---- O modelo criado terá 9 árvores de decisão e o número mínimo de dados (folhas) de 10.
+                
+                from sklearn.ensemble import RandomForestRegressor
+                regressor = RandomForestRegressor(n_estimators=9, min_samples_leaf = 10, random_state=0)
+                regressor.fit(x_train, y_train);
+
+
 
 ### 3. Resultados
 
