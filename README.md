@@ -63,7 +63,7 @@ A análise de resultados concentrou-se nas seguintes métricas de avaliação:
 
 3. Mean Absolute Percentage Error (MAPE) - O MAPE é uma métrica que calcula a média das porcentagens das diferenças absolutas entre os valores reais e os valores previstos em relação aos valores reais. É uma métrica útil para avaliar a precisão das previsões em termos de porcentagem de erro em relação aos valores reais.
 
-4. Coefficient of Determination (R² Score) - O R² Score é uma métrica que varia de 0 a 1 e quantifica a proporção da variância do valor real que é explicada pela variável do valor previsto em um modelo de regressão. Quanto mais próximo de 1, melhor o modelo se ajusta aos dados, indicando que ele explica uma maior parte da variabilidade nos dados reais..
+4. Coefficient of Determination (R² Score) - O R² Score é uma métrica que varia de 0 a 1 e quantifica a proporção da variância do valor real que é explicada pela variável do valor previsto em um modelo de regressão. Quanto mais próximo de 1, melhor o modelo se ajusta aos dados, indicando que ele explica uma maior parte da variabilidade nos dados reais.
 
 Rede Neural
 
@@ -115,7 +115,7 @@ Em seguida, foram definidos os parâmetros da rede neural:
 
 Random Forest
 
-O modelo Random Forest é um algoritmo de aprendizado de máquina baseado em combinações de várias árvores de decisão para melhorar a precisão e reduzir o overfitting. Esse método utiliza amostragem aleatória para criar subconjuntos de dados de treinamento tornando cada árvore diferente. A combinação de árvores ajuda a reduzir o overfitting, tornando o modelo mais generalizável.
+O modelo Random Forest é um algoritmo de aprendizado de máquina baseado em combinações de várias árvores de decisão para melhorar a precisão e reduzir o overfitting tornando o modelo mais generalizável. Esse método utiliza amostragem aleatória para criar subconjuntos de dados de treinamento tornando cada árvore diferente.
 
 Para esse modelo foi utilizada a biblioteca scikit-learn para dividir os dados em conjuntos de treinamento e teste, onde o parâmetro test_size determina a proporção dos dados reservados para teste (10% neste caso). Após a separação de dados foi criado o modelo de regressão baseado em Random Forest. Este modelo é configurado com 9 árvores de decisão e um número mínimo de dados (folhas) igual a 10. O parâmetro random_state é fixado em 0 para garantir reprodutibilidade. Posteriormente, o modelo foi treinado usando os dados de treinamento (x_train e y_train) e o resultado foi um modelo de regressão Random Forest pronto para fazer previsões com base nos dados de teste.
 
