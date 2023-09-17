@@ -43,7 +43,7 @@ Agora, com foco definido, iniciamos uma nova exploração de dados identificando
 
 ![image](https://github.com/natasariobgd/TCC-BI-PUC/assets/97364314/c57df118-6c3a-4862-b6e0-7d03bda46991)
 
-A identificação de sezonalidades semanais e anuais, de tendencias de crecimento durante o peridodo analisado e existencia de ruidos foi importante no processo de definição de parâmentros de modelos aplicados. 
+A identificação de sazonalidades semanais e anuais, de tendencias de crecimento durante o peridodo analisado e existencia de ruidos foi importante no processo de definição de parâmentros de modelos aplicados. 
 
 ### 2. Modelagem
 
