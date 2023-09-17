@@ -13,10 +13,10 @@ Este trabalho se propõe a explorar a aplicação das técnicas de previsão de 
 
 Nosso objetivo é aplicar alguns modelos de previsão e verificar os resultados que cada um vai atingir utilizando um conjunto de dados históricos de vendas de uma loja de brinquedos ao longo de um período de cinco anos.
 
-A escolha e a construção de modelos são feitos após uma análise exploratória de dados. 
+A escolha e a construção de modelos são feitas após uma análise exploratória de dados. 
 Esse estudo apresenta os modelos de Rede Neural e de Random Forest. Aborda as bibliotecas utilizadas, os parâmetros aplicados nos treinamentos feitos e os resultados dos testes realizados.
 
-A enfase do estudo é o modelo Random Fortest, por ter apresentado melhores resultados.
+A ênfase do estudo é o modelo Random Forest, por ter apresentado melhores resultados.
 
 ### Abstract
 
@@ -36,14 +36,14 @@ The emphasis of the study is on the Random Forest model, as it has shown better 
 No contexto do varejo, entender e tentar antecipar a procura de clientes abre a possibilidade para melhor otimização de estoques e alocação de recursos tanto financeiros quanto humanos.
 Para isso se tornar possível, é importante fazer uma análise exploratória de dados históricos que mostra a estrutura, as estatísticas principais e possíveis sazonalidades e tendências.
 
-A base de dados utilizada nesse estudo de caso contem dados de venda, de estoque e de preços. 
-A primeirá dúvida foi se essas três informações tem ou não alguma correlação. Utilizando a matriz de correlação foi detectada a ausência de correlação entre os dados definindo que o foco deve ser apenas na série de venda.
+A base de dados utilizada nesse estudo de caso contém dados de venda, de estoque e de preços. 
+A primeira dúvida foi se essas três informações têm ou não alguma correlação. Utilizando a matriz de correlação foi detectada a ausência de correlação entre os dados definindo que o foco deve ser apenas na série de venda.
 
-Agora, com foco definido, iniciamos uma nova exploração de dados identificando as tendências, sezonalidades e ruidos dos dados de apenas série de venda.
+Agora, com foco definido, iniciamos uma nova exploração de dados identificando as tendências, sazonalidades e ruídos dos dados de apenas série de venda.
 
 ![image](https://github.com/natasariobgd/TCC-BI-PUC/assets/97364314/c57df118-6c3a-4862-b6e0-7d03bda46991)
 
-A identificação de sazonalidades semanais e anuais, de tendencias de crecimento durante o peridodo analisado e existencia de ruidos foi importante no processo de definição de parâmentros de modelos aplicados. 
+A identificação de sazonalidades semanais e anuais, de tendencias de crescimento durante o período analisado e existência de ruídos foi importante no processo de definição de parâmetros de modelos aplicados. 
 
 ### 2. Modelagem
 
@@ -67,7 +67,7 @@ A análise de resultados concentrou-se nas seguintes métricas de avaliação:
 
 Rede Neural
 
-Na construção de modelo foi utiliza a biblioteca Keras para construir e treinar redes neurais com o auxílio da biblioteca TensorFlow. Além disso, a biblioteca MinMaxScaler do scikit-learn aplicou a normalização de dados que ajudou a evitar problemas de convergência e facilitou o treinamento com diferentes faixas de valores. O processo de construção de modelo incluiu a separação dos dados em conjuntos de treinamento e teste (usando 80% dos dados para treinamento), seguido pela normaliação dos dados de vendas para o intervalo [-1, 1] com o objetivo de padronizá-los. O resultado final foi criação de  conjuntos de dados de treinamento e teste normalizados e prontos para serem usados em modelo de rede neural.
+Na construção de modelo foi utiliza a biblioteca Keras para construir e treinar redes neurais com o auxílio da biblioteca TensorFlow. Além disso, a biblioteca MinMaxScaler do scikit-learn aplicou a normalização de dados que ajudou a evitar problemas de convergência e facilitou o treinamento com diferentes faixas de valores. O processo de construção de modelo incluiu a separação dos dados em conjuntos de treinamento e teste (usando 80% dos dados para treinamento), seguido pela normalização dos dados de vendas para o intervalo [-1, 1] com o objetivo de padronizá-los. O resultado final foi criação de  conjuntos de dados de treinamento e teste normalizados e prontos para serem usados em modelo de rede neural.
 
             ---- Vamos separar os dados em treinamento e teste
             train_size = int(len(df) * 0.8)
@@ -81,7 +81,7 @@ Na construção de modelo foi utiliza a biblioteca Keras para construir e treina
 
 Em seguida, foram definidos os parâmetros da rede neural:
 
-1. Window_size - tamanho de sequiência de dados originais,   
+1. Window_size - tamanho de sequência de dados originais,   
 2. Modelo de rede - modelo pode conter uma ou mais camadas o que define a complexidade de modelo,
 3. Epochs - número de vezes que um algoritmo de aprendizado percorre o conjunto completo de dados de treinamento durante o processo de treinamento de um modelo de machine learning,
 4. Batch_size - representa a quantidade de dados usados em cada iteração do algoritmo,
@@ -175,7 +175,7 @@ Os resultados obtidos demonstram claramente a eficácia do algoritmo Random Fore
 Trata-se de um modelo facilmente configurável e pode ser aplicado tanto para os problemas de classificação quanto de regressão, que foi o nosso caso. 
 
 Este estudo contribuiu para uma compreensão melhor como funcionam os modelos de regressão e como a escolha dos hiper parâmetros desempenhou um papel importante na modelagem.
-Como futuro trabalho, sugiro explorar o uso de hiperparâmetros melhorando ainda mais o aprendizado de máquina.
+Como futuro trabalho, sugiro explorar o uso de hiper parâmetros melhorando ainda mais o aprendizado de máquina.
 
 
 ---
